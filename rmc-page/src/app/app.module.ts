@@ -7,6 +7,8 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { FormularyComponent } from './pages/formulary/formulary.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,9 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
+    MDBBootstrapModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

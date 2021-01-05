@@ -8,6 +8,9 @@
             "schematics": {
                 "@schematics/angular:application": {
                     "strict": true
+                },
+                "@schematics/angular:component": {
+                    "style": "scss"
                 }
             },
             "root": "",
@@ -28,14 +31,17 @@
                             "src/assets"
                         ],
                         "styles": [
-                            "node_modules/bootstrap/dist/css/bootstrap.min.css",
-                            "src/styles.css"
+                            "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss",
+                            "node_modules/@fortawesome/fontawesome-free/scss/solid.scss",
+                            "node_modules/@fortawesome/fontawesome-free/scss/regular.scss",
+                            "node_modules/@fortawesome/fontawesome-free/scss/brands.scss",
+                            "node_modules/angular-bootstrap-md/assets/scss/bootstrap/bootstrap.scss",
+                            "node_modules/angular-bootstrap-md/assets/scss/mdb.scss",
+                            "node_modules/animate.css/animate.css",
+                            "src/styles.scss"
                         ],
                         "scripts": [
-                            "node_modules/jquery/dist/jquery.min.js",
-                            "node_modules/@popperjs/core/dist/umd/popper.min.js",
-                            "node_modules/bootstrap/dist/js/bootstrap.min.js",
-                            "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+                            "node_modules/hammerjs/hammer.min.js"
                         ]
                     },
                     "configurations": {
@@ -94,7 +100,7 @@
                             "src/assets"
                         ],
                         "styles": [
-                            "src/styles.css"
+                            "src/styles.scss"
                         ],
                         "scripts": []
                     }
