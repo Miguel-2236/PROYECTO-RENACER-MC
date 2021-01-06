@@ -1,21 +1,77 @@
-<header class="site-header sticky-top py-1">
-    <nav class="container d-flex flex-column flex-md-row justify-content-between">
-        <a class="py-2" href="#" aria-label="Product">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24">
-      <title>Product</title>
-      <circle cx="12" cy="12" r="10" />
-      <path
-        d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
-    </svg>
-        </a>
-        <a class="py-2 d-none d-md-inline-block" href="home">Home</a>
-        <a class="py-2 d-none d-md-inline-block" href="formulario">Inscripciones</a>
-        <!--a class="py-2 d-none d-md-inline-block" href="#">Features</a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Enterprise</a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Cart</a-->
-    </nav>
-</header>
+<mdb-navbar SideClass="navbar navbar-expand-lg white ie-nav fixed-top" [containerInside]="false">
+    <mdb-navbar-brand>
+        <a class="logo navbar-brand" href="#"><strong>RMC</strong></a>
+    </mdb-navbar-brand>
+    <links>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active waves-light" mdbWavesEffect>
+                <a class="nav-link" href="formulario">Reservas</a>
+            </li>
+            <li class="nav-item waves-light" mdbWavesEffect>
+                <a class="nav-link">Departamentos</a>
+            </li>
+            <li class="nav-item waves-light" mdbWavesEffect>
+                <a class="nav-link">Galeria</a>
+            </li>
+            <li class="nav-item waves-light" mdbWavesEffect>
+                <a class="nav-link">Acerca de</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item waves-light" mdbWavesEffect>
+                <a class="nav-link" href="https://www.facebook.com/renacermisioncristiana/">
+                    <mdb-icon fab icon="facebook-f"></mdb-icon>
+                </a>
+            </li>
+            <li class="nav-item waves-light" mdbWavesEffect>
+                <a class="nav-link" href="https://www.youtube.com/channel/UCkzRonPanBbapRHh-DKqdHA">
+                    <mdb-icon fab icon="youtube"></mdb-icon>
+                </a>
+            </li>
+        </ul>
+    </links>
+</mdb-navbar>
+
 
 <router-outlet></router-outlet>
+
+
+<footer class="page-footer font-small blue pt-4">
+
+    <div class="container-fluid text-center text-md-left">
+        <div class="row">
+            <div class="col-md-6 mt-md-0 mt-3">
+                <h5 class="text-uppercase">Renacer Misión Cristiana</h5>
+                <p>Afiliada al concilio Renacer Internacional.</p>
+            </div>
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <div class="col-md-3 mb-md-0 mb-3">
+                <h5 class="text-uppercase">Contacto</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="tel:+57-315-7125339">+57-315-7125339</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 mb-md-0 mb-3">
+                <h5 class="text-uppercase">Dirección</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <span>Calle 66 #1N-63</span>
+                    </li>
+                    <li>
+                        <span>Cali, Valle del Cauca</span>
+                    </li>
+                    <li>
+                        <span>Colombia</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+    </div>
+</footer>
