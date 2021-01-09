@@ -11,5 +11,5 @@ export class FormularyComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  nombre = "Hola mundo"
 }
