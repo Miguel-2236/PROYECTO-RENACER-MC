@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup, FormGroupDirective } from '@angular/forms';
 
 @Component({
   selector: 'app-formulary',
@@ -6,10 +7,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./formulary.component.scss']
 })
 export class FormularyComponent implements OnInit {
+  
+  disabledSubmitButton:boolean = false;
+  contactForm : FormGroup = new FormGroup({
+		apellido        : new FormControl(),
+		nombre	: new FormControl(),
+		identificacion		: new FormControl(),
+		email		: new FormControl(),
+		telefono	: new FormControl(),
+		servicio	: new FormControl(),
+		cantAsientos		: new FormControl()
+	});
 
-  constructor() { }
+  constructor(
+    private formBuilder: FormBuilder
+  ) { }
 
   ngOnInit(): void {
   }
-  nombre = "Hola mundo"
+  
+  onSubmit(): void {}
+
 }

@@ -6,66 +6,58 @@
         <br>
         <br>
         <br>
-    
+
         <mdb-card-header class="info-color white-text text-center py-4">
-          <h5>
-            <strong>¡Reserva aqui tu cupo!</strong>
-          </h5>
+            <h5>
+                <strong>¡Reserva aqui tu cupo!</strong>
+            </h5>
         </mdb-card-header>
-      
-    <!-- TODO: Default form contact -->
-    <form class="text-center border border-light p-5" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-    
-      
-        
-        <div class="input-group mb-3">
-            <div class="input-group-prepend"></div>
-            <!-- Apellido -->
-            <input type="text" formControlName="contactFormName" id="defaultContactFormName1" mdbInput
-            class="form-control mb-4" placeholder="Apellido">
-            <span class="input-group-addon" id="basic-addon1">⠀⠀⠀⠀</span>
-            <!-- Nombre --> 
-            <input type="text" formControlName="contactFormName" id="defaultContactFormName2" mdbInput
-            class="form-control mb-4" placeholder="Nombre">
-        </div>
-          
-          
 
-        <!-- Documento -->
-          <input type="text" formControlName="contactFormName" id="defaultContactFormdoc" mdbInput
-          class="form-control mb-4" placeholder="Numero de Documento">
+        <!-- TODO: Default form contact -->
+        <form class="text-center border border-light p-5" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
 
-        <!-- Email -->
-        <input type="email" formControlName="contactFormEmail" id="defaultContactFormEmail" mdbInput
-          class="form-control mb-4" placeholder="Correo Electronico">
 
-        <!-- Telefono -->
-          <input type="text" formControlName="contactFormName" id="defaultContactFormtel" mdbInput
-          class="form-control mb-4" placeholder="Telefono / Celular">
-      
-        <!-- Subject -->
-        <label>¿En cual servicio deseas acompañarnos?</label>
-        <select formControlName="contactFormSubjects" class="browser-default custom-select mb-4">
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend"></div>
+                <!-- Apellido -->
+                <input type="text" formControlName="apellido" id="defaultContactFormName1" mdbInput class="form-control mb-4" placeholder="Apellido">
+                <span class="input-group-addon" id="basic-addon1">⠀⠀⠀⠀</span>
+                <!-- Nombre -->
+                <input type="text" formControlName="nombre" id="defaultContactFormName2" mdbInput class="form-control mb-4" placeholder="Nombre">
+            </div>
+
+
+
+            <!-- Documento -->
+            <input type="text" formControlName="identificacion" id="defaultContactFormdoc" mdbInput class="form-control mb-4" placeholder="Numero de Documento">
+
+            <!-- Email -->
+            <input type="email" formControlName="email" id="defaultContactFormEmail" mdbInput class="form-control mb-4" placeholder="Correo Electronico">
+
+            <!-- Telefono -->
+            <input type="text" formControlName="telefono" id="defaultContactFormtel" mdbInput class="form-control mb-4" placeholder="Telefono / Celular">
+
+            <!-- Subject -->
+            <label>¿En cual servicio deseas acompañarnos?</label>
+            <select formControlName="servicio" class="browser-default custom-select mb-4">
           <option value="" selected disabled>Selecciona el servicio al que asistiras</option>
           <option value="1" >Primer servicio</option>
           <option value="2">Segundo Servicio</option>
           <option value="3">Tercer Servicio</option>
         </select>
-      
-        <!-- Seleccionar la cantidad de sillas -->
-        <div class="form-group">
-            <label>¿Cuantas asientos deseas separar?</label>
-          <input type="number" min="1" max="10" formControlName="contactFormMessage" class="form-control rounded-0" mdbInput id="exampleFormControlTextarea2"
-            rows="3" placeholder="Seleccione los asientos que desea separar">
-        </div>
-      
-        <!-- Boton de enviar -->
-        <button mdbBtn color="cyan" class="waves-light" mdbWavesEffect outline="true" block="true" class="z-depth-0 my-4 waves-effect"
-          mdbWavesEffect type="submit" [disabled]="disabledSubmitButton">Reservar</button>
-          
-      </form>
-      <!-- Default form contact -->
-        
-      </mdb-card>
-  </div>
-  
+
+            <!-- Seleccionar la cantidad de sillas -->
+            <div class="form-group">
+                <label>¿Cuantas asientos deseas separar?</label>
+                <input type="number" min="1" max="10" formControlName="cantAsientos" class="form-control rounded-0" mdbInput id="exampleFormControlTextarea2" rows="3" placeholder="Seleccione los asientos que desea separar">
+            </div>
+
+            <!-- Boton de enviar -->
+            <button mdbBtn color="cyan" class="waves-light" mdbWavesEffect class="z-depth-0 my-4 waves-effect" mdbWavesEffect type="submit" [disabled]="disabledSubmitButton">Reservar</button>
+
+        </form>
+        <!-- Default form contact -->
+
+    </mdb-card>
+</div>
